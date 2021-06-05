@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Research</title>
+	<meta name="description" content="Comparison with other Websites">
+	<meta name="author" content="Hrishav Gajurel">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script type="text/javascript" src="../js/script.js"></script>
+
+	<!--configuration for hyperlinks-->
+	<style type="text/css">
+		div a{
+			text-decoration-line: none;
+			color: #6a0091;
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 17px
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<!-- logo of website, on the left of header -->
+			<div class="logo">
+				<p>HRISHAV<span style="margin-left: 12px;"></span>GAJUREL</p/>
+			</div>
+		
+			<!-- creating unordered list for navigation bar elements, on the right of header -->
+			<ul id="navlinks">
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="cv.html">CV</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="research.html" class="selected">Research</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+
+			<!-- creating hamburger menu -->
+			<div class="burger">
+				<button onclick="slideMenu()">
+					<div></div>
+					<div></div>
+					<div></div>
+				</button>
+			</div>
+		</nav>
+	</header>
+
+	<a id="top"></a> <!--redirecting to top of webpage from footer-->
+	<br><br><br> <!--empty spaces that are obscured by the fixed navbar-->
+
+
+	<!--text box 1-->
+	<div class="box">
+		<h2>The objective of this research</h2>
+		<p>The point of this research is to compare various elements of my website and their functinalities with that of other websites. This is in an effort to show my influences while designing my website as well as to demonstrate how it holds up with some other popular websites.</p>
+	</div>
+
+	<!--text box 2-->
+	<div class="box">
+		<h2>Comparision 1: Navbar Layout and Selection</h2>
+		<p>The navbar for this website was influenced by joeabercrombie.com which is the website of one of my all-time favourite authors. I've gone for a similar navigation bar where the currently selected link has a red underline and my navbar has a fixed posittion at the top of the webpage. And I've also added a hover effect where the link colour turns red when the cursor is pointed over it.</p>
+		<a href="../images/navbar.png" target="_blank">See image of mentioned website</a>
+	</div>
+
+	<!--text box 3-->
+	<div class="box">
+		<h2>Comparison 2: Navbar Hamburger Menu</h2>
+		<p>The navigation bar is fully responsive in that when it is minimized to a point where the navigation links don't have any space, they are replaced by a humburger menu. This menu, when pressesd, is degigned to show the navigation links in a vertical layout. This allows the navbar to be fully responsive and usable in screens of any aspect ratio.</p>
+		<a href="../images/navbarmenu.png" target="_blank">See image of mentioned website</a>
+	</div>
+
+	<!--text box 4-->
+	<div class="box">
+		<h2>Comparison 3: Responsive UI Elements</h2>
+		<p>Taking an example of YouTube, the videos are shown as rectangular box elements. You can generally see 4 videos horizontally. But if you minimize the width to 50%, you will see only 2 videos and the next two will be shifted to the row below. This is implemented in my website where there is the presence of multiple such UI elements horizontally next to each other.</p>
+		<a href="../images/flexible.png" target="_blank">See image of mentioned website</a> <br>
+		<a href="../images/flexibleresized.png" target="_blank">See image of mentioned website after changes</a>
+	</div>
+
+	<!--text box 5-->
+	<div class="box">
+		<h2>Comparison 4: Responsive Text</h2>
+		<p>Let's take Wikipedia as an example, almost everyone is familiar with it. When you minimize the webpage, the text present in the articles get shifted down to fit the screen. This feature is present is my website as well in order to maximize readability of text on small screens.</p>
+		<a href="../images/text.png" target="_blank">See image of mentioned website</a> <br>
+		<a href="../images/textresized.png" target="_blank">See image of mentioned website after changes</a>
+	</div>
+
+	<!--text box 6-->
+	<div class="box">
+		<h2>Comparison 5: Form Validation</h2>
+		<p>Any form submitted should be validated to check if the  user has filled in all the required input options. Otherwise, a message should be displayed accordingly. In this example, we see that the feedback form on Apple Inc's website shows a textbox with error message. I have taken a different approach where an alert box is displayed telling the user that the form fields are empty.</p>
+		<a href="../images/form.png" target="_blank">See image of mentioned website</a>
+	</div>
+
+
+	<footer>
+		<p>Website copyright &copy; 2021 Hrishav Gajurel</p>
+		<a href="#top">Click here to go back to top</a>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,136 @@
+/*font for headings and regular text*/
+h1, h2, h3, h4, h5, h6{
+	font-family: Times New Roman, Arial, sans-serif;
+}
+
+p{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 17px;
+}
+
+
+/*body background color and formatiing*/
+body{
+	background-color: #f1deff;
+	margin: 0px;
+}
+
+
+/*styling for the navigation bar*/
+nav{
+	background-color: black;
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+/*for logo on left side of navbar*/
+.logo p{
+	color: white;
+	font-family: Georgia, Arial, serif;
+	font-size: 18px;
+	letter-spacing: 8px;
+}
+
+
+/*for navigation links on right side of navbar*/
+#navlinks{
+	display: flex;
+	justify-content: space-around;
+	width: 500px;
+}
+
+nav a{
+	text-decoration: none;
+	color: white;
+	font-family: Georgia, Arial, serif;
+	font-size: 20px;
+}
+
+.selected{
+	text-decoration: underline;
+	text-underline-position: under;
+	text-decoration-color: red;
+}
+
+
+/*red color when hovering over any hyperlink in the website*/
+a:hover{
+	color: red;
+}
+
+
+/*for hamburger menu*/
+.burger{
+	margin: 15px 0px;
+	display: none;
+}
+
+.burger div{
+	background-color: white;
+	width: 25px;
+	height: 3px;
+	margin: 5px;
+}
+
+.burger button{
+	background: transparent;
+	border: 0px;
+	cursor: pointer;
+}
+
+
+/*replacing navbar by hamburger menu when webpage minimized*/
+@media screen and (max-width: 800px){
+	#navlinks{
+		position: absolute;
+		right: 0px;
+		background-color: black;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 94vh;
+		margin-top: 6vh;
+		width: 300px;
+		transform: translateX(100%);
+	}
+
+	.burger{
+		display: block;
+		position: absolute;
+		right: 20px;
+	}
+}
+
+
+/*styling for main content of the webpages*/
+.box{
+	background-color: #f3e5ff;
+	padding: 10px 30px;
+	margin: 30px;
+}
+
+
+/*styling for the footer*/
+footer{
+	background-color: black;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+footer p{
+	color: white;
+	font-family: Times New Roman, Arial, serif;
+	font-size: 16px;
+}
+
+footer a{
+	text-decoration: none;
+	color: white;
+	font-family: Times New Roman, Arial, serif;
+	font-size: 16px;
+	margin: 15px 0px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CV</title>
+	<meta name="description" content="My Curriculum Vitae">
+	<meta name="author" content="Hrishav Gajurel">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script type="text/javascript" src="../js/script.js"></script>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<!-- logo of website, on the left of header -->
+			<div class="logo">
+				<p>HRISHAV<span style="margin-left: 12px;"></span>GAJUREL</p/>
+			</div>
+		
+			<!-- creating unordered list for navigation bar elements, on the right of header -->
+			<ul id="navlinks">
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="cv.html" class="selected">CV</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="research.html">Research</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+
+			<!-- creating hamburger menu -->
+			<div class="burger">
+				<button onclick="slideMenu()">
+					<div></div>
+					<div></div>
+					<div></div>
+				</button>
+			</div>
+		</nav>
+	</header>
+
+	<a id="top"></a> <!--redirecting to top of webpage from footer-->
+	<br><br><br> <!--empty spaces that are obscured by the fixed navbar-->
+
+
+	<!--setting a flexible display that encompasses all the elements of the webpage-->
+	<div style="display: flex; flex-wrap: wrap;">
+
+		<!-- left flexible column that encompasses 30% of screen -->
+		<div style="flex: 30%;">
+			<div class="box">
+				<h2>Introduction</h2>
+				<p>I am Hrishav Gajurel, my age is 19 years and my height is 6ft 2in. I was born and am currently living in Kathmandu, the capital of Nepal. I generally maintain a pretty cheerful attitute. I don't watch or play much sports but I do like to go on morning/evening walks for exercise. I really enjoy listening to music and audiobooks, preferably in the peace and quiet of late night or very early morning. I am fluent in English and Nepali, have a pretty firm grasp of Hindi, and can understand the Russian alphabet, although I don't understand the language.</p>
+				<p>My hobbies currently include learning to draw sketches and learning to play the ukulele. I am also starting to invest in the stock market as my first steps towards financial intelligence and independence. I am also in the process of learning to drive a car. On a more technological side, building this website has gotten me really invested into web design and I would like to improve this website in the future for professional use.</p>
+			</div>
+		</div>
+
+		
+		<!-- right flexible column that encompasses 70% of screen -->
+		<div style="flex: 70%;">
+			<div class="box">
+				<h2>My Contact Information</h2>
+				<p>You can contact me at <strong>hrishavgl@gmail.com</strong>. All my social media have the same username as well.</p>
+			</div>
+
+			<div class="box">
+				<h2>My Educational Background</h2>
+				<p>As mentioned in the Home Page, I'm currently pursuing an undergraduate degree in Computer Networking and IT Security at Islington College. The aforementioned college is affiliated with London Metropolitan University. Before this, I completed my plus 2 i.e. Grade 11 and 12 from the Asian Institute of Technology and Management. Prior to that, I completed my Grade 1 through 10 at GEMS school. Even before that, my very first years of school life occured at Montessori Int'l School in Kathmandu, Nepal.</p>
+			</div>
+
+			<div class="box">
+				<h2>Skills and Specializations</h2>
+				<p>In terms of skills, I am apt at responsive web design, which you may have gathered from using this website. I also understand Java and have a firm grasp of the concepts of modern oject-oriented programming languages. I have recently learned to design and implemented relational database ststems for the handling of large scale user data. I can also perform network subnetting and configuration of networks according to the requirements of the client.</p>
+			</div>
+		</div>
+
+	</div>	
+		
+
+	<footer>
+		<p>Website copyright &copy; 2021 Hrishav Gajurel</p>
+		<a href="#top">Click here to go back to top</a>
+	</footer>
+</body>
+</html>

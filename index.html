@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta name="description" content="Home Page of website">
+	<meta name="author" content="Hrishav Gajurel">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<!-- logo of website, on the left of header -->
+			<div class="logo">
+				<p>HRISHAV<span style="margin-left: 12px;"></span>GAJUREL</p/>
+			</div>
+		
+			<!-- creating unordered list for navigation bar elements, on the right of header -->
+			<ul id="navlinks">
+				<li><a href="index.html" class="selected">Home</a></li>
+				<li><a href="pages/cv.html">CV</a></li>
+				<li><a href="pages/blog.html">Blog</a></li>
+				<li><a href="pages/research.html">Research</a></li>
+				<li><a href="pages/contact.html">Contact</a></li>
+			</ul>
+
+			<!-- creating hamburger menu -->
+			<div class="burger">
+				<button onclick="slideMenu()">
+					<div></div>
+					<div></div>
+					<div></div>
+				</button>
+			</div>
+		</nav>
+	</header>
+	
+	<a id="top"></a> <!--redirecting to top of webpage from footer-->
+	<br><br><br> <!--empty spaces that are obscured by the fixed navbar-->
+	
+
+	<!--setting a flexible display that encompasses all the elements of the webpage-->
+	<div style="display: flex; flex-wrap: wrap; justify-content: space-evenly;">
+
+		<!-- left flexible column -->
+		<div>	
+			<div style="background-color: black; width: 380px; height: 480px; margin: 100px 0px;">
+				<div style="width: 380px; height: 380px;">
+					<img src="images/me.jpg" alt="picture of myself" style="width: 80%; border-radius: 50%; margin: 10%; color: white;">
+				</div>
+
+				<div style="width: 380px; height: 100px;">
+					<p style="color: #cdcacf; font-size: 20px; text-align: center;">Good Day Stranger!<br>I'm Hrishav Gajurel</p>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- right flexible column -->		
+		<div>
+			<div class="box" style="width: 500px; margin-top: 100px;">
+				<h2>About Me</h2>
+				<p>I'm currently pursuing an undergraduate degree in the field of Computer Networking in Islington College, Nepal. My interests include everything to do with computers and technology in general. To know more about me or get in touch, please refer to my CV. Cheers!</p>
+			</div>
+
+			<div class="box" style="width: 500px;">
+				<h2>Today</h2>
+				<p id="date"></p>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- javascript to display current date and time -->
+	<script type="text/javascript">
+		function datetime(){
+			// getting date and time
+			document.getElementById("date").innerHTML = Date();
+
+			// refreshing the script every 1000 ms i.e. every 1 second
+			setTimeout(datetime,1000);
+		}
+		// running the function
+		datetime();
+	</script>
+
+	<footer>
+		<p>Website copyright &copy; 2021 Hrishav Gajurel</p>
+		<a href="#top">Click here to go back to top</a>
+	</footer>
+</body>
+</html>
